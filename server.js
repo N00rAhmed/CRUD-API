@@ -1,9 +1,6 @@
 require('dotenv').config()
 const express = require('express')
 
-let cors = require("cors");
-app.use(cors());
-
 
 
 const mongoose = require('mongoose')
@@ -11,6 +8,10 @@ const mongoose = require('mongoose')
 const taskRoutes = require('./routes/tasks')
 
 const app = express()
+
+let cors = require("cors");
+app.use(cors());
+
 
 app.use(express.json())
 
